@@ -31,6 +31,7 @@ export function Logo({
         className="shrink-0 object-contain"
         style={{ height, width: height }}
         aria-hidden
+        loading="eager"
       />
       {showWordmark && (
         <span
