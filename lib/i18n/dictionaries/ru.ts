@@ -24,6 +24,7 @@ const dictionary: Dictionary = {
     comingSoon: "Скоро",
     comingSoonDesc:
       "Мы работаем над первыми релизами. Загляните позже — или зайдите в Discord за новостями.",
+    toBeReleased: "Скоро в релизе",
     details: "Подробнее",
     buyNow: "Купить",
     wishlist: "В список желаний",

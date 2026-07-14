@@ -22,6 +22,7 @@ const dictionary: Dictionary = {
     subtitle: "我们在做的，以及接下来的计划。",
     comingSoon: "即将推出",
     comingSoonDesc: "我们正在准备首批作品。请稍后再来，或加入 Discord 获取消息。",
+    toBeReleased: "即将发布",
     details: "查看详情",
     buyNow: "立即购买",
     wishlist: "加入愿望单",

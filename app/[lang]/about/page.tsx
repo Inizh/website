@@ -97,34 +97,63 @@ export default function AboutPage() {
             {dict.about.teamSoon}
           </motion.div>
         ) : (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {team.map((member, index) => (
-              <motion.div
-                key={member.id}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="text-center"
-              >
-                <div className="aspect-square rounded-2xl overflow-hidden mb-4 bg-muted flex items-center justify-center">
-                  {member.image ? (
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                  ) : (
-                    <span className="text-3xl font-bold text-accent">
-                      {member.name.charAt(0)}
-                    </span>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            {team.map((member, index) => {
+              const card = (
+                <>
+                  <div className="aspect-square rounded-2xl overflow-hidden mb-4 bg-muted flex items-center justify-center ring-1 ring-border">
+                    {member.image ? (
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        referrerPolicy="no-referrer"
+                      />
+                    ) : (
+                      <span className="text-3xl font-bold text-accent">
+                        {member.name.charAt(0)}
+                      </span>
+                    )}
+                  </div>
+                  <h3 className="font-bold text-lg group-hover:text-accent transition-colors">
+                    {member.name}
+                  </h3>
+                  {member.tagname && (
+                    <p className="text-xs text-accent/90 font-medium mt-0.5">
+                      @{member.tagname}
+                    </p>
                   )}
-                </div>
-                <h3 className="font-bold text-lg">{member.name}</h3>
-                <p className="text-sm text-muted-foreground">{member.role}</p>
-              </motion.div>
-            ))}
+                  <p className="text-sm text-muted-foreground mt-1">
+                    {member.role}
+                  </p>
+                </>
+              );
+
+              return (
+                <motion.div
+                  key={member.id}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.08 }}
+                  className="text-center group"
+                >
+                  {member.github ? (
+                    <a
+                      href={member.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-2xl"
+                    >
+                      {card}
+                    </a>
+                  ) : (
+                    card
+                  )}
+                </motion.div>
+              );
+            })}
           </div>
         )}
       </div>

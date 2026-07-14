@@ -1,5 +1,7 @@
 export type Locale = "en" | "ta" | "ru" | "hi" | "zh" | "ja" | "de" | "es";
 
+export type GameStatus = "released" | "coming-soon";
+
 export interface Game {
   id: string;
   slug: string;
@@ -11,11 +13,14 @@ export interface Game {
   platforms: string[];
   releaseYear: number;
   rating: number;
+  /** Empty string = placeholder art until real cover is added */
   coverImage: string;
   screenshots: string[];
   trailerUrl?: string;
   features: string[];
   story: string;
+  /** Default treated as "released" if omitted */
+  status?: GameStatus;
   systemRequirements: {
     minimum: Record<string, string>;
     recommended: Record<string, string>;
@@ -26,6 +31,7 @@ export interface Game {
     gog?: string;
     itch?: string;
     website?: string;
+    github?: string;
   };
   awards?: string[];
 }
@@ -48,6 +54,11 @@ export interface TeamMember {
   id: string;
   name: string;
   role: string;
+  /** Handle / nickname shown under the name */
+  tagname?: string;
+  /** GitHub profile URL */
+  github?: string;
+  /** Avatar URL (usually GitHub avatar) */
   image?: string;
 }
 
@@ -78,6 +89,7 @@ export interface Dictionary {
     subtitle: string;
     comingSoon: string;
     comingSoonDesc: string;
+    toBeReleased: string;
     details: string;
     buyNow: string;
     wishlist: string;

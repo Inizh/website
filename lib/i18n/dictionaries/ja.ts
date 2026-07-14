@@ -24,6 +24,7 @@ const dictionary: Dictionary = {
     comingSoon: "近日公開",
     comingSoonDesc:
       "最初のリリースに向けて制作中です。また後でチェックするか、Discord で最新情報をどうぞ。",
+    toBeReleased: "近日リリース予定",
     details: "詳細を見る",
     buyNow: "購入する",
     wishlist: "ウィッシュリスト",

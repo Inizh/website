@@ -3,12 +3,12 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { ArrowRight, Gamepad2, Star } from "lucide-react";
+import { ArrowRight, Gamepad2 } from "lucide-react";
 import { games } from "@/lib/data";
 import { Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { GameCard } from "@/components/games/GameCard";
 
 export function LatestGames() {
   const params = useParams();
@@ -62,42 +62,7 @@ export function LatestGames() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Link href={`/${lang}/games/${game.slug}/`}>
-                  <div className="group relative overflow-hidden rounded-xl bg-card border hover:border-accent/50 transition-all duration-300">
-                    <div className="aspect-[16/10] overflow-hidden">
-                      <img
-                        src={game.coverImage}
-                        alt={game.title}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div className="p-6">
-                      <div className="flex items-center gap-2 mb-3">
-                        {game.genre.slice(0, 2).map((g) => (
-                          <Badge key={g} variant="accent" className="text-xs">
-                            {g}
-                          </Badge>
-                        ))}
-                      </div>
-                      <h3 className="text-xl font-bold mb-2 group-hover:text-accent transition-colors">
-                        {game.title}
-                      </h3>
-                      <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
-                        {game.description}
-                      </p>
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-1">
-                          <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                          <span className="text-sm font-medium">{game.rating}</span>
-                        </div>
-                        <span className="text-sm text-muted-foreground">
-                          {game.releaseYear}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
+                <GameCard game={game} />
               </motion.div>
             ))}
           </div>
