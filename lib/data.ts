@@ -177,12 +177,15 @@ export const team: TeamMember[] = [
 ];
 
 /** Social / community links. Use "#" until real URLs are provided. */
-export const socialLinks = {
+export const socialLinks: Record<
+  "discord" | "twitter" | "youtube" | "instagram" | "steam",
+  string
+> = {
   discord: "https://discord.gg/DhCdCTt5T",
   twitter: "#",
   youtube: "#",
   instagram: "#",
   steam: "#",
-} as const;
+};
 
 export type SocialPlatform = keyof typeof socialLinks;
