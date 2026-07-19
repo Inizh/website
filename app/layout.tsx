@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
-import { Inter, Noto_Sans_Tamil } from "next/font/google";
+import { Cinzel, Outfit, Noto_Sans_Tamil } from "next/font/google";
 import { BRAND } from "@/lib/brand";
 import "./globals.css";
 
-const inter = Inter({
+/** Clean geometric body face — reads well on dark UI */
+const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-sans",
+});
+
+/** Elegant display face — black & gold / luxury studio feel */
+const cinzel = Cinzel({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-display",
 });
 
 const notoTamil = Noto_Sans_Tamil({
@@ -35,7 +43,7 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
     >
       <body
-        className={`${inter.variable} ${notoTamil.variable} ${inter.className} bg-background text-foreground antialiased`}
+        className={`${outfit.variable} ${cinzel.variable} ${notoTamil.variable} ${outfit.className} bg-background text-foreground antialiased`}
       >
         {children}
       </body>

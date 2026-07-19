@@ -11,9 +11,10 @@ const config: Config = {
     extend: {
       colors: {
         accent: {
-          DEFAULT: "#00f0ff",
-          dark: "#00c8d6",
-          light: "#5ffaff",
+          DEFAULT: "#D4AF37",
+          dark: "#A68B2C",
+          light: "#F0D78C",
+          foreground: "#000000",
         },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -30,8 +31,8 @@ const config: Config = {
         ring: "hsl(var(--ring))",
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
-        display: ["Inter", "system-ui", "sans-serif"],
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "var(--font-sans)", "serif"],
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-out",
@@ -48,8 +49,8 @@ const config: Config = {
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
         pulseGlow: {
-          "0%, 100%": { boxShadow: "0 0 20px rgba(0, 240, 255, 0.3)" },
-          "50%": { boxShadow: "0 0 40px rgba(0, 240, 255, 0.6)" },
+          "0%, 100%": { boxShadow: "0 0 20px rgba(212, 175, 55, 0.35)" },
+          "50%": { boxShadow: "0 0 40px rgba(212, 175, 55, 0.65)" },
         },
       },
     },

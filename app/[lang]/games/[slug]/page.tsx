@@ -78,10 +78,10 @@ export default function GameDetailPage() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <div className="flex flex-wrap gap-2 mb-4">
               {isComingSoon && (
-                <Badge variant="accent">{dict.games.toBeReleased}</Badge>
+                <Badge variant="default">{dict.games.toBeReleased}</Badge>
               )}
               {game.genre.map((g) => (
-                <Badge key={g} variant="accent">
+                <Badge key={g} variant="outline">
                   {g}
                 </Badge>
               ))}

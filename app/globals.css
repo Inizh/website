@@ -2,28 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Dark theme only */
+/*
+  Brand palette:
+  #000000 black · #D4AF37 gold · #DDDDDD soft gray · #EEEEEE light gray
+*/
 @layer base {
   :root {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 5.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 5.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 183 100% 50%;
-    --accent-foreground: 0 0% 9%;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 93%; /* #EEEEEE */
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 93%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 93%;
+    --primary: 0 0% 93%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 46 12% 8%;
+    --secondary-foreground: 0 0% 93%;
+    --muted: 46 12% 8%;
+    --muted-foreground: 0 0% 87%; /* #DDDDDD */
+    --accent: 46 65% 52%; /* #D4AF37 */
+    --accent-foreground: 0 0% 0%; /* black on gold */
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 183 100% 50%;
+    --destructive-foreground: 0 0% 93%;
+    --border: 46 15% 16%;
+    --input: 46 15% 16%;
+    --ring: 46 65% 52%; /* #D4AF37 */
     --radius: 0.5rem;
     color-scheme: dark;
   }
@@ -41,6 +44,12 @@
     /* Tamil brand glyphs (இனிழ்) fall back to Noto Sans Tamil */
     font-family: var(--font-sans), var(--font-tamil), system-ui, sans-serif;
   }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display), var(--font-sans), var(--font-tamil), serif;
+    letter-spacing: 0.02em;
+  }
   html {
     scroll-behavior: smooth;
   }
@@ -48,14 +57,14 @@
 
 @layer utilities {
   .text-gradient {
-    background-image: linear-gradient(to right, #00f0ff, #00c8d6);
+    background-image: linear-gradient(to right, #f0d78c, #d4af37, #a68b2c);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
   }
   .glass {
-    background-color: rgba(0, 0, 0, 0.45);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(212, 175, 55, 0.15);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }

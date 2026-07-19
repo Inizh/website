@@ -14,7 +14,7 @@ export const games: Game[] = [
     platforms: ["PC"],
     releaseYear: 2027,
     rating: 0,
-    coverImage: "",
+    coverImage: "/images/VERT_space-shooter.webp",
     screenshots: [],
     features: [
       "Easy Mode if you are new",
@@ -97,7 +97,7 @@ export const games: Game[] = [
     platforms: ["PC"],
     releaseYear: 0,
     rating: 0,
-    coverImage: "",
+    coverImage: "/images/VERT_red-girl-xhigh-denoise.webp",
     screenshots: [],
     features: ["You can fight", "You can win", "You can lose"],
     story: "What if Indians made a game",
@@ -167,7 +167,6 @@ export const team: TeamMember[] = [
   },
   {
     id: "5",
-    // name/role fields were swapped in the source data
     name: "Gunit Kumar",
     tagname: "fexa",
     role: "Game programmer",

@@ -36,7 +36,7 @@ export function Logo({
       {showWordmark && (
         <span
           className={cn(
-            "font-semibold tracking-tight text-foreground whitespace-nowrap select-none",
+            "font-display font-semibold tracking-wide text-foreground whitespace-nowrap select-none",
             wordmarkClassName
           )}
         >
@@ -50,7 +50,12 @@ export function Logo({
 /** Brand wordmark text alone (no image). */
 export function BrandWordmark({ className }: { className?: string }) {
   return (
-    <span className={cn("font-semibold tracking-tight whitespace-nowrap", className)}>
+    <span
+      className={cn(
+        "font-display font-semibold tracking-wide whitespace-nowrap",
+        className
+      )}
+    >
       {BRAND.wordmark}
     </span>
   );

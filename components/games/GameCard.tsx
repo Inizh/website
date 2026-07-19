@@ -40,13 +40,13 @@ export function GameCard({ game }: GameCardProps) {
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
           {isComingSoon && (
             <div className="absolute top-3 left-3">
-              <Badge variant="accent" className="text-[10px] shadow-md">
+              <Badge variant="default" className="backdrop-blur-sm">
                 {dict.games.toBeReleased}
               </Badge>
             </div>
           )}
           <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
-            <div className="bg-accent text-black p-2 rounded-full">
+            <div className="bg-accent text-accent-foreground p-2 rounded-sm border border-accent-light/40 shadow-[0_0_16px_rgba(212,175,55,0.25)]">
               <ArrowUpRight className="h-4 w-4" />
             </div>
           </div>
@@ -55,7 +55,7 @@ export function GameCard({ game }: GameCardProps) {
         <div className="p-5">
           <div className="flex flex-wrap gap-2 mb-3">
             {game.genre.map((g) => (
-              <Badge key={g} variant="accent" className="text-[10px]">
+              <Badge key={g} variant="outline">
                 {g}
               </Badge>
             ))}

@@ -54,7 +54,7 @@ export function GameFilters({ onFilterChange }: GameFiltersProps) {
           <SlidersHorizontal className="h-4 w-4" />
           Filters
           {hasActiveFilters && (
-            <Badge variant="accent" className="ml-1 h-5 w-5 p-0 flex items-center justify-center text-[10px]">
+            <Badge variant="default" className="ml-1 h-5 min-w-5 px-1.5 tracking-normal">
               {[selectedGenre, selectedPlatform, selectedYear].filter(f => f !== "All").length}
             </Badge>
           )}
@@ -68,18 +68,18 @@ export function GameFilters({ onFilterChange }: GameFiltersProps) {
       </div>
 
       {isOpen && (
-        <div className="p-4 rounded-lg border bg-card space-y-4 animate-fade-in">
+        <div className="p-4 rounded-sm border border-accent/25 bg-card space-y-4 animate-fade-in">
           <div>
-            <label className="text-sm font-medium mb-2 block">Genre</label>
+            <label className="text-sm font-medium mb-2 block tracking-wide text-accent/90">Genre</label>
             <div className="flex flex-wrap gap-2">
               {genres.map((g) => (
                 <button
                   key={g}
                   onClick={() => handleChange("genre", g)}
-                  className={`px-3 py-1 text-xs rounded-full border transition-colors ${
+                  className={`px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] rounded-sm border transition-colors ${
                     selectedGenre === g
-                      ? "bg-accent text-black border-accent"
-                      : "hover:border-accent/50"
+                      ? "bg-accent text-accent-foreground border-accent shadow-[0_0_12px_rgba(212,175,55,0.2)]"
+                      : "border-accent/35 bg-black/60 text-muted-foreground hover:border-accent/55 hover:text-foreground"
                   }`}
                 >
                   {g}
@@ -89,16 +89,16 @@ export function GameFilters({ onFilterChange }: GameFiltersProps) {
           </div>
           
           <div>
-            <label className="text-sm font-medium mb-2 block">Platform</label>
+            <label className="text-sm font-medium mb-2 block tracking-wide text-accent/90">Platform</label>
             <div className="flex flex-wrap gap-2">
               {platforms.map((p) => (
                 <button
                   key={p}
                   onClick={() => handleChange("platform", p)}
-                  className={`px-3 py-1 text-xs rounded-full border transition-colors ${
+                  className={`px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] rounded-sm border transition-colors ${
                     selectedPlatform === p
-                      ? "bg-accent text-black border-accent"
-                      : "hover:border-accent/50"
+                      ? "bg-accent text-accent-foreground border-accent shadow-[0_0_12px_rgba(212,175,55,0.2)]"
+                      : "border-accent/35 bg-black/60 text-muted-foreground hover:border-accent/55 hover:text-foreground"
                   }`}
                 >
                   {p}
@@ -108,16 +108,16 @@ export function GameFilters({ onFilterChange }: GameFiltersProps) {
           </div>
           
           <div>
-            <label className="text-sm font-medium mb-2 block">Year</label>
+            <label className="text-sm font-medium mb-2 block tracking-wide text-accent/90">Year</label>
             <div className="flex flex-wrap gap-2">
               {years.map((y) => (
                 <button
                   key={y}
                   onClick={() => handleChange("year", y)}
-                  className={`px-3 py-1 text-xs rounded-full border transition-colors ${
+                  className={`px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] rounded-sm border transition-colors ${
                     selectedYear === y
-                      ? "bg-accent text-black border-accent"
-                      : "hover:border-accent/50"
+                      ? "bg-accent text-accent-foreground border-accent shadow-[0_0_12px_rgba(212,175,55,0.2)]"
+                      : "border-accent/35 bg-black/60 text-muted-foreground hover:border-accent/55 hover:text-foreground"
                   }`}
                 >
                   {y}

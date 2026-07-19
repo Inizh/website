@@ -73,10 +73,10 @@ export default function BlogPage() {
                 <button
                   key={c}
                   onClick={() => setCategory(c)}
-                  className={`px-4 py-2 text-sm rounded-md border transition-colors ${
+                  className={`px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] rounded-sm border transition-colors ${
                     category === c
-                      ? "bg-accent text-black border-accent"
-                      : "hover:border-accent/50"
+                      ? "bg-accent text-accent-foreground border-accent shadow-[0_0_12px_rgba(212,175,55,0.2)]"
+                      : "border-accent/35 bg-black/60 text-muted-foreground hover:border-accent/55 hover:text-foreground"
                   }`}
                 >
                   {c}

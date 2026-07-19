@@ -24,8 +24,10 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <span className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-wider uppercase rounded-full bg-accent/20 text-accent border border-accent/30">
+          <span className="inline-flex items-center gap-2.5 px-4 py-1.5 mb-6 text-[11px] font-semibold tracking-[0.22em] uppercase border border-accent/50 bg-black text-accent shadow-[inset_0_1px_0_rgba(240,215,140,0.15),0_0_20px_rgba(212,175,55,0.12)]">
+            <span className="h-1.5 w-1.5 rotate-45 bg-accent shrink-0" aria-hidden />
             {dict.hero.badge}
+            <span className="h-1.5 w-1.5 rotate-45 bg-accent shrink-0" aria-hidden />
           </span>
         </motion.div>
 
@@ -33,7 +35,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
+          className="font-display text-5xl sm:text-7xl lg:text-8xl font-bold tracking-wide mb-6"
         >
           <span className="text-gradient">{dict.hero.tagline}</span>
         </motion.h1>
@@ -67,21 +69,6 @@ export function Hero() {
           </Link>
         </motion.div>
       </div>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
-      >
-        <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex justify-center pt-2">
-          <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1.5 h-1.5 bg-accent rounded-full"
-          />
-        </div>
-      </motion.div>
     </section>
   );
 }
