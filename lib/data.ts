@@ -45,7 +45,87 @@ export const games: Game[] = [
     awards: ["Waste of time - Parents"],
   },
   {
-    id: "2",
+  id: "2",
+  slug: "ride-along",
+  title: "Ride Along",
+  tagline: "Buckle up, hit the road, and enjoy the ride.",
+  description:
+    "A relaxing car driving game built for cruising through serene landscapes at your own pace.",
+  longDescription:
+    "Escape into open highways, scenic coastal roads, and tranquil countryside routes. Ride Along lets you leave the pressure of competitive racing behind and focus purely on smooth physics, soothing soundtracks, and peaceful exploration.",
+  genre: ["Driving", "Relaxing", "3D", "Single-player"],
+  platforms: ["PC"],
+  releaseYear: 2027,
+  rating: 0,
+  coverImage: "",
+  screenshots: [],
+  features: [
+    "Dynamic day/night cycle and realistic weather conditions",
+    "Radio stations featuring ambient, lofi, and synthwave tracks",
+    "Free-roam mode with customizable vehicles"
+  ],
+  story: "Built for anyone who just needs to clear their head with a late-night drive.",
+  status: "coming-soon",
+  systemRequirements: {
+    minimum: {
+      OS: "Windows 10 64-bit",
+      Processor: "Intel Core i3-6100 / AMD FX-6300",
+      Memory: "8 GB",
+      Graphics: "NVIDIA GeForce GTX 750 Ti / AMD Radeon R7 360",
+      Storage: "10 GB"
+    },
+    recommended: {
+      OS: "Windows 11 64-bit / Linux 6.12",
+      Processor: "Intel Core i5-10400F / AMD Ryzen 5 3600",
+      Memory: "16 GB",
+      Graphics: "NVIDIA GeForce GTX 1660 Super / AMD Radeon RX 5600 XT",
+      Storage: "10 GB SSD"
+    }
+  },
+  links: {
+    github: "https://github.com/inizh/Ride_Along"
+  },
+  awards: ["Most Peaceful Vibe - Indie Showcase"]
+},
+  {
+    id: "3",
+    slug: "yoi-yurei",
+    title: "Yoi-Yurei",
+    tagline: "Until I Die",
+    description: "TBD",
+    longDescription: "TBD",
+    genre: ["2D", "Metroidvania", "Multiplayer"],
+    platforms: ["PC"],
+    releaseYear: 0,
+    rating: 0,
+    coverImage: "/images/VERT_red-girl-xhigh-denoise.webp",
+    screenshots: [],
+    features: ["You can fight", "You can win", "You can lose"],
+    story: "What if Indians made a game",
+    status: "coming-soon",
+    systemRequirements: {
+      minimum: {
+        OS: "Any",
+        Processor: "Any x86-64 or Arm 1GHz",
+        Memory: "2 GB",
+        Graphics: "None",
+        Storage: "3 GB",
+      },
+      recommended: {
+        OS: "Linux 6.12+",
+        Processor: "AMD Ryzen 3 1200 or equivalent",
+        Memory: "4 GB",
+        Graphics: "AMD Vega 3 or equivalent",
+        Storage: "3 GB",
+      },
+    },
+    links: {
+      github: "https://github.com/inizh/Yoi_Yurei",
+    },
+    awards: [],
+  },
+  {
+    id: "4",
     slug: "love-games",
     title: "Love Games",
     tagline: "Only for committed people",
@@ -85,43 +165,6 @@ export const games: Game[] = [
       github: "https://github.com/inizh/Love_Games",
     },
     awards: ["Suspicion - Parents"],
-  },
-  {
-    id: "3",
-    slug: "yoi-yurei",
-    title: "Yoi-Yurei",
-    tagline: "Until I Die",
-    description: "TBD",
-    longDescription: "TBD",
-    genre: ["2D", "Metroidvania", "Multiplayer"],
-    platforms: ["PC"],
-    releaseYear: 0,
-    rating: 0,
-    coverImage: "/images/VERT_red-girl-xhigh-denoise.webp",
-    screenshots: [],
-    features: ["You can fight", "You can win", "You can lose"],
-    story: "What if Indians made a game",
-    status: "coming-soon",
-    systemRequirements: {
-      minimum: {
-        OS: "Any",
-        Processor: "Any x86-64 or Arm 1GHz",
-        Memory: "2 GB",
-        Graphics: "None",
-        Storage: "3 GB",
-      },
-      recommended: {
-        OS: "Linux 6.12+",
-        Processor: "AMD Ryzen 3 1200 or equivalent",
-        Memory: "4 GB",
-        Graphics: "AMD Vega 3 or equivalent",
-        Storage: "3 GB",
-      },
-    },
-    links: {
-      github: "https://github.com/inizh/Yoi_Yurei",
-    },
-    awards: [],
   },
 ];
 
