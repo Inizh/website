@@ -1,0 +1,150 @@
+{
+  "seo": {
+    "title": "Blog",
+    "description": "Notes on IoT, software, and game development from the Inizh team."
+  },
+  "categories": [
+    { "id": "iot", "label": "IoT" },
+    { "id": "software", "label": "Software" },
+    { "id": "gamedev", "label": "Game Dev" },
+    { "id": "studio", "label": "Studio" }
+  ],
+  "authors": [
+    {
+      "id": "team",
+      "name": "Inizh Team",
+      "role": "Studio",
+      "avatar": "/images/team/inizh-team.webp"
+    }
+  ],
+  "posts": [
+    {
+      "slug": "intro-to-mqtt",
+      "title": "A Practical Introduction to MQTT",
+      "excerpt": "Why MQTT is the go-to protocol for small-device telemetry, and how we use it in our IoT products.",
+      "category": "iot",
+      "tags": ["mqtt", "protocols", "iot"],
+      "authorId": "team",
+      "publishedAt": "2026-03-15",
+      "updatedAt": "2026-03-20",
+      "readingTimeMinutes": 7,
+      "cover": { "src": "/images/blog/mqtt.webp", "alt": "MQTT publish-subscribe diagram" },
+      "content": [
+        { "type": "heading", "level": 2, "text": "What is MQTT?" },
+        { "type": "paragraph", "text": "MQTT is a lightweight publish/subscribe messaging protocol designed for low-bandwidth, high-latency networks. It is the default protocol in most IoT dashboards." },
+        { "type": "paragraph", "text": "In our **Smart Hub** firmware, MQTT is used to push sensor readings to the cloud with minimal overhead." },
+        { "type": "list", "ordered": false, "items": ["Low bandwidth", "Reliable delivery", "Bidirectional control"] },
+        { "type": "code", "language": "ts", "code": "client.publish('sensors/temp', '23.4');" },
+        { "type": "callout", "variant": "info", "title": "Tip", "text": "Use topic namespaces like sensors/+/temp so dashboards can subscribe to all temperature readings at once." }
+      ],
+      "relatedProductSlugs": ["smart-hub"],
+      "relatedGameSlugs": [],
+      "featured": true,
+      "published": true
+    },
+    {
+      "slug": "from-prototype-to-product",
+      "title": "From Prototype to Product",
+      "excerpt": "The messy middle between a working demo and something you can actually ship.",
+      "category": "studio",
+      "tags": ["process", "hardware", "software"],
+      "authorId": "team",
+      "publishedAt": "2026-02-10",
+      "readingTimeMinutes": 6,
+      "cover": { "src": "/images/blog/prototype.webp", "alt": "Hardware prototype next to a laptop" },
+      "content": [
+        { "type": "heading", "level": 2, "text": "The gap between demo and deploy" },
+        { "type": "paragraph", "text": "A prototype proves an idea. A product proves it again and again under real conditions." },
+        { "type": "list", "ordered": true, "items": ["Harden the firmware", "Design for manufacturing", "Add remote monitoring", "Write documentation"] },
+        { "type": "quote", "text": "Shipping is a feature.", "cite": "Someone on the internet" }
+      ],
+      "relatedProductSlugs": ["smart-hub", "field-monitor"],
+      "relatedGameSlugs": [],
+      "featured": true,
+      "published": true
+    },
+    {
+      "slug": "choosing-a-game-engine",
+      "title": "Choosing a Game Engine for Indie Teams",
+      "excerpt": "Why we use Unity for most titles, and when a custom engine starts to make sense.",
+      "category": "gamedev",
+      "tags": ["unity", "engines", "indie"],
+      "authorId": "team",
+      "publishedAt": "2026-01-20",
+      "readingTimeMinutes": 5,
+      "cover": { "src": "/images/blog/game-engine.webp", "alt": "Game engine editor screenshot placeholder" },
+      "content": [
+        { "type": "heading", "level": 2, "text": "Unity, Godot, or custom?" },
+        { "type": "paragraph", "text": "For small teams, Unity still offers the best balance of asset store, platform support, and documentation." },
+        { "type": "paragraph", "text": "We reach for custom tooling only when a project has unusual networking or rendering needs." },
+        { "type": "callout", "variant": "tip", "title": "Tip", "text": "Start with the engine that gets you to a playable build fastest. Optimise the choice later." }
+      ],
+      "relatedProductSlugs": [],
+      "relatedGameSlugs": ["ride-along", "yoi-yurei"],
+      "featured": false,
+      "published": true
+    },
+    {
+      "slug": "dashboard-design-principles",
+      "title": "Dashboard Design Principles",
+      "excerpt": "How we keep IoT dashboards useful instead of overwhelming.",
+      "category": "software",
+      "tags": ["ui", "dashboard", "iot"],
+      "authorId": "team",
+      "publishedAt": "2025-12-05",
+      "readingTimeMinutes": 6,
+      "cover": { "src": "/images/blog/dashboard.webp", "alt": "Clean dashboard UI" },
+      "content": [
+        { "type": "heading", "level": 2, "text": "Less noise, more signal" },
+        { "type": "paragraph", "text": "The best dashboards answer one question fast: is everything okay?" },
+        { "type": "list", "ordered": false, "items": ["Use colour sparingly", "Group related metrics", "Make alerts actionable"] },
+        { "type": "paragraph", "text": "Dash Stack applies these ideas out of the box." }
+      ],
+      "relatedProductSlugs": ["dash-stack"],
+      "relatedGameSlugs": [],
+      "featured": false,
+      "published": true
+    },
+    {
+      "slug": "lorawan-vs-wifi-for-sensors",
+      "title": "LoRaWAN vs Wi-Fi for Sensors",
+      "excerpt": "When long range and low power beat raw bandwidth.",
+      "category": "iot",
+      "tags": ["lora", "wifi", "sensors"],
+      "authorId": "team",
+      "publishedAt": "2025-11-12",
+      "readingTimeMinutes": 6,
+      "cover": { "src": "/images/blog/lora.webp", "alt": "LoRa node and gateway illustration" },
+      "content": [
+        { "type": "heading", "level": 2, "text": "Pick the right radio" },
+        { "type": "paragraph", "text": "Wi-Fi is great for devices with power and humans nearby. LoRa wins when devices are far apart, outdoors, and running on batteries." },
+        { "type": "paragraph", "text": "Our Field Monitor nodes use LoRa to reach a Smart Hub from hundreds of metres away." }
+      ],
+      "relatedProductSlugs": ["field-monitor", "smart-hub"],
+      "relatedGameSlugs": [],
+      "featured": false,
+      "published": true
+    },
+    {
+      "slug": "behind-the-scenes-ride-along",
+      "title": "Behind the Scenes: Ride Along",
+      "excerpt": "How a small team is building a chill driving game in India.",
+      "category": "gamedev",
+      "tags": ["ride-along", "unity", "audio"],
+      "authorId": "team",
+      "publishedAt": "2025-10-30",
+      "readingTimeMinutes": 8,
+      "cover": { "src": "/images/blog/ride-along-dev.webp", "alt": "Concept art for Ride Along" },
+      "content": [
+        { "type": "heading", "level": 2, "text": "The vibe comes first" },
+        { "type": "paragraph", "text": "Before tuning physics, we tuned the feeling: open road, soft sunset, music that does not demand attention." },
+        { "type": "list", "ordered": false, "items": ["Procedural road placement", "Dynamic skybox", "Radio station mixing"] },
+        { "type": "paragraph", "text": "Ride Along is a love letter to everyone who drives to clear their head." }
+      ],
+      "relatedProductSlugs": [],
+      "relatedGameSlugs": ["ride-along"],
+      "featured": false,
+      "published": true
+    }
+  ]
+}

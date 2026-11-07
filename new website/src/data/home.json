@@ -1,0 +1,90 @@
+{
+  "seo": {
+    "title": "Inizh | IoT, Software & Games",
+    "description": "Inizh builds IoT platforms, custom software, and original games from India."
+  },
+  "hero": {
+    "eyebrow": "IoT · Software · Games",
+    "headline": "We build the things that connect, compute, and play.",
+    "subheadline": "From sensor networks and cloud dashboards to web apps and indie games, Inizh turns ideas into reliable, delightful products.",
+    "primaryCta": { "label": "Explore Products", "href": "/products" },
+    "secondaryCta": { "label": "See Our Games", "href": "/games" },
+    "image": { "src": "/images/brand/hero.webp", "alt": "Abstract illustration of connected devices, code, and game controllers" }
+  },
+  "stats": [
+    { "value": "4", "label": "Games in development" },
+    { "value": "10+", "label": "IoT prototypes shipped" },
+    { "value": "5", "label": "Team members" },
+    { "value": "India", "label": "Based in Coimbatore" }
+  ],
+  "services": [
+    {
+      "id": "iot",
+      "icon": "cpu",
+      "title": "IoT Solutions",
+      "description": "End-to-end connected systems: hardware design, firmware, connectivity, and cloud dashboards.",
+      "href": "/products?category=iot",
+      "features": ["Firmware", "Cloud dashboards", "Edge analytics"]
+    },
+    {
+      "id": "software",
+      "icon": "code-2",
+      "title": "Software Solutions",
+      "description": "Custom web and mobile apps, internal tools, integrations, and scalable backends.",
+      "href": "/products?category=software",
+      "features": ["Web apps", "APIs & integrations", "Mobile"]
+    },
+    {
+      "id": "games",
+      "icon": "gamepad-2",
+      "title": "Game Development",
+      "description": "Original indie titles and game-dev services for PC and mobile platforms.",
+      "href": "/games",
+      "features": ["Original games", "2D/3D prototypes", "Multiplayer"]
+    }
+  ],
+  "featured": {
+    "productSlugs": ["smart-hub", "field-monitor"],
+    "gameSlugs": ["ride-along", "yoi-yurei"],
+    "postSlugs": ["intro-to-mqtt", "from-prototype-to-product"]
+  },
+  "process": [
+    {
+      "step": 1,
+      "title": "Discover",
+      "description": "We map your goals, constraints, and users before writing a line of code."
+    },
+    {
+      "step": 2,
+      "title": "Design",
+      "description": "Architecture, UX, and prototypes are shaped together so the build stays focused."
+    },
+    {
+      "step": 3,
+      "title": "Build",
+      "description": "Iterative development with continuous feedback, testing, and integration."
+    },
+    {
+      "step": 4,
+      "title": "Ship & Support",
+      "description": "Deployment, monitoring, and ongoing support keep the product healthy."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Inizh turned our rough sensor idea into a working dashboard in weeks. The team cares about craft.",
+      "author": "Placeholder Client",
+      "role": "Operations Lead",
+      "company": "Example Farms",
+      "avatar": "/images/team/placeholder.webp"
+    }
+  ],
+  "clients": [
+    { "name": "Example Farms", "logo": "/images/brand/clients/example-farms.svg" }
+  ],
+  "finalCta": {
+    "headline": "Ready to build something great?",
+    "description": "Tell us what you are making and we will get back to you within two business days.",
+    "cta": { "label": "Get in touch", "href": "/contact" }
+  }
+}

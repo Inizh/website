@@ -1,0 +1,95 @@
+{
+  "seo": {
+    "title": "Contact",
+    "description": "Get in touch with Inizh for IoT, software, and game development projects."
+  },
+  "intro": {
+    "headline": "Get in touch",
+    "subheadline": "Tell us what you are building. We usually reply within two business days."
+  },
+  "form": {
+    "fields": [
+      {
+        "name": "name",
+        "label": "Name",
+        "type": "text",
+        "required": true,
+        "placeholder": "Your name"
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "email",
+        "required": true,
+        "placeholder": "you@example.com"
+      },
+      {
+        "name": "company",
+        "label": "Company / Organisation",
+        "type": "text",
+        "required": false,
+        "placeholder": "Optional"
+      },
+      {
+        "name": "subject",
+        "label": "Subject",
+        "type": "select",
+        "required": true,
+        "placeholder": "Select a subject"
+      },
+      {
+        "name": "message",
+        "label": "Message",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "Tell us about your project..."
+      }
+    ],
+    "subjectOptions": [
+      { "label": "General enquiry", "href": "general" },
+      { "label": "IoT project", "href": "iot" },
+      { "label": "Software project", "href": "software" },
+      { "label": "Game development", "href": "game-dev" },
+      { "label": "Partnership", "href": "partnership" },
+      { "label": "Careers", "href": "careers" }
+    ],
+    "successMessage": "Thanks for reaching out. We will get back to you soon.",
+    "privacyNote": "We only use your information to respond to your message. No spam."
+  },
+  "channels": [
+    {
+      "icon": "mail",
+      "label": "Email",
+      "value": "hello@inizh.tech",
+      "href": "mailto:hello@inizh.tech"
+    },
+    {
+      "icon": "phone",
+      "label": "Phone",
+      "value": "+91 00000 00000",
+      "href": "tel:+9100000000000"
+    },
+    {
+      "icon": "map-pin",
+      "label": "Office",
+      "value": "Coimbatore, Tamil Nadu, India",
+      "href": "#offices"
+    }
+  ],
+  "offices": [
+    {
+      "name": "Inizh HQ",
+      "address": {
+        "line1": "",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "country": "India",
+        "postalCode": ""
+      },
+      "phone": "+91 00000 00000",
+      "email": "hello@inizh.tech",
+      "hours": "Monday – Friday, 10:00 AM – 6:00 PM IST",
+      "mapEmbedUrl": ""
+    }
+  ]
+}

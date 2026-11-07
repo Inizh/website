@@ -1,0 +1,146 @@
+{
+  "seo": {
+    "title": "Pricing",
+    "description": "Transparent pricing for Inizh IoT, software, and game development services."
+  },
+  "intro": {
+    "headline": "Simple, transparent pricing",
+    "subheadline": "Start small and scale as your product grows. Enterprise plans include custom engineering support."
+  },
+  "currency": { "code": "USD", "symbol": "$" },
+  "billingPeriods": [
+    { "id": "monthly", "label": "Monthly" },
+    { "id": "yearly", "label": "Yearly", "badge": "Save 20%" }
+  ],
+  "plans": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "description": "For prototypes and small deployments.",
+      "price": { "monthly": 29, "yearly": 290 },
+      "priceLabel": null,
+      "highlighted": false,
+      "badge": null,
+      "features": [
+        { "text": "Up to 10 devices", "included": true },
+        { "text": "Email support", "included": true },
+        { "text": "Basic dashboard", "included": true },
+        { "text": "Custom firmware", "included": false },
+        { "text": "SLA", "included": false }
+      ],
+      "cta": { "label": "Get started", "href": "/contact?plan=starter" },
+      "published": true,
+      "order": 1
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "description": "For growing teams and production workloads.",
+      "price": { "monthly": 99, "yearly": 990 },
+      "priceLabel": null,
+      "highlighted": true,
+      "badge": "Recommended",
+      "features": [
+        { "text": "Up to 500 devices", "included": true },
+        { "text": "Priority chat support", "included": true },
+        { "text": "Advanced dashboard", "included": true },
+        { "text": "Custom firmware", "included": true },
+        { "text": "SLA", "included": false }
+      ],
+      "cta": { "label": "Get started", "href": "/contact?plan=pro" },
+      "published": true,
+      "order": 2
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "description": "Custom solutions at scale.",
+      "price": null,
+      "priceLabel": "Custom",
+      "highlighted": false,
+      "badge": null,
+      "features": [
+        { "text": "Unlimited devices", "included": true },
+        { "text": "Dedicated support", "included": true },
+        { "text": "On-premise option", "included": true },
+        { "text": "Custom firmware", "included": true },
+        { "text": "SLA", "included": true }
+      ],
+      "cta": { "label": "Contact sales", "href": "/contact?plan=enterprise" },
+      "published": true,
+      "order": 3
+    }
+  ],
+  "comparison": {
+    "groups": [
+      {
+        "title": "Devices",
+        "rows": [
+          { "feature": "Max devices", "values": { "starter": "10", "pro": "500", "enterprise": "Unlimited" } },
+          { "feature": "Data retention", "values": { "starter": "7 days", "pro": "1 year", "enterprise": "Custom" } }
+        ]
+      },
+      {
+        "title": "Support",
+        "rows": [
+          { "feature": "Support channel", "values": { "starter": "Email", "pro": "Chat + email", "enterprise": "Dedicated" } },
+          { "feature": "Response time", "values": { "starter": "48 hours", "pro": "24 hours", "enterprise": "4 hours" } }
+        ]
+      }
+    ]
+  },
+  "customServices": [
+    {
+      "title": "Custom software development",
+      "description": "Web apps, internal tools, integrations, and APIs built to your spec.",
+      "startingAt": "From $5,000",
+      "cta": { "label": "Request a quote", "href": "/contact?service=custom-software" }
+    },
+    {
+      "title": "IoT hardware design",
+      "description": "Schematic design, PCB layout, firmware, and pilot production support.",
+      "startingAt": "From $8,000",
+      "cta": { "label": "Request a quote", "href": "/contact?service=iot-hardware" }
+    },
+    {
+      "title": "Game development",
+      "description": "Prototypes, playable builds, and co-development for PC and mobile.",
+      "startingAt": "From $4,000",
+      "cta": { "label": "Request a quote", "href": "/contact?service=game-dev" }
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can I change plans later?",
+      "answer": "Yes. You can upgrade or downgrade at any time. We will prorate the difference."
+    },
+    {
+      "question": "Is there a free trial?",
+      "answer": "Yes. Every plan includes a 14-day free trial with no credit card required."
+    },
+    {
+      "question": "What counts as a device?",
+      "answer": "A device is any physical sensor, gateway, or edge node that reports data through our platform."
+    },
+    {
+      "question": "Do you offer on-premise deployment?",
+      "answer": "On-premise and VPC deployments are available on Enterprise plans."
+    },
+    {
+      "question": "Can I export my data?",
+      "answer": "Yes. Data can be exported as CSV or JSON at any time from the dashboard."
+    },
+    {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept all major cards, UPI, and bank transfers for annual plans."
+    },
+    {
+      "question": "Do prices include taxes?",
+      "answer": "Listed prices do not include applicable taxes. Indian customers will be charged GST."
+    },
+    {
+      "question": "How do I get support?",
+      "answer": "Email support@inizh.tech or visit our support hub for documentation and FAQs."
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "seo": {
+    "title": "Products",
+    "description": "Explore Inizh IoT gateways, sensors, dashboards, and custom software products."
+  },
+  "categories": [
+    { "id": "iot", "label": "IoT" },
+    { "id": "software", "label": "Software" }
+  ],
+  "items": [
+    {
+      "slug": "smart-hub",
+      "name": "Smart Hub",
+      "category": "iot",
+      "tagline": "One gateway for every sensor.",
+      "summary": "A compact IoT gateway that connects Wi-Fi, BLE, LoRa and Zigbee devices to the cloud.",
+      "description": [
+        "Smart Hub is the central nervous system for small-scale IoT deployments. It collects data from mixed sensor networks and forwards it securely to the cloud.",
+        "Designed for factories, farms, and smart buildings, it runs firmware built in-house and ships with a ready-made dashboard template."
+      ],
+      "image": { "src": "/images/products/smart-hub.webp", "alt": "Smart Hub IoT gateway" },
+      "gallery": [
+        { "src": "/images/products/smart-hub-2.webp", "alt": "Smart Hub side view showing antenna ports" }
+      ],
+      "features": [
+        { "icon": "wifi", "title": "Multi-protocol", "description": "Wi-Fi, BLE, LoRa, Zigbee on one board." },
+        { "icon": "shield", "title": "Secure", "description": "TLS outbound, local encryption at rest." },
+        { "icon": "cloud", "title": "Cloud-ready", "description": "MQTT and HTTP endpoints out of the box." },
+        { "icon": "settings", "title": "Remote config", "description": "Update firmware and settings over the air." }
+      ],
+      "specs": [
+        {
+          "group": "Hardware",
+          "items": [
+            { "label": "CPU", "value": "ARM Cortex-M33" },
+            { "label": "RAM", "value": "512 KB" },
+            { "label": "Storage", "value": "8 MB flash" },
+            { "label": "Power", "value": "5 V / 2 A USB-C" }
+          ]
+        },
+        {
+          "group": "Connectivity",
+          "items": [
+            { "label": "Wi-Fi", "value": "802.11 b/g/n" },
+            { "label": "Bluetooth", "value": "BLE 5.0" },
+            { "label": "LoRa", "value": "868/915 MHz" },
+            { "label": "Zigbee", "value": "3.0" }
+          ]
+        }
+      ],
+      "useCases": ["Smart factory", "Agriculture", "Asset tracking", "Buildings"],
+      "pricingPlanIds": ["starter", "pro"],
+      "downloads": [
+        { "label": "Datasheet (PDF)", "href": "/downloads/smart-hub.pdf" }
+      ],
+      "status": "available",
+      "tags": ["gateway", "mqtt", "edge"],
+      "featured": true,
+      "published": true,
+      "order": 1
+    },
+    {
+      "slug": "field-monitor",
+      "name": "Field Monitor",
+      "category": "iot",
+      "tagline": "Soil and weather sensing for farms.",
+      "summary": "Solar-powered field sensor nodes that report soil moisture, temperature, and humidity.",
+      "description": [
+        "Field Monitor helps farmers make irrigation decisions with real-time soil and weather data.",
+        "Each node is solar powered, waterproof, and sends readings every fifteen minutes over LoRa to a Smart Hub gateway."
+      ],
+      "image": { "src": "/images/products/field-monitor.webp", "alt": "Field Monitor sensor node in a crop row" },
+      "gallery": [],
+      "features": [
+        { "icon": "sun", "title": "Solar powered", "description": "Runs for months without mains power." },
+        { "icon": "droplets", "title": "Soil + weather", "description": "Moisture, temperature, humidity, and light." },
+        { "icon": "map", "title": "Field mapping", "description": "Visualise readings across plots on the dashboard." }
+      ],
+      "specs": [
+        {
+          "group": "Sensors",
+          "items": [
+            { "label": "Soil moisture", "value": "Capacitive, ±3%" },
+            { "label": "Temperature", "value": "-40 °C to +85 °C" },
+            { "label": "Humidity", "value": "0–100% RH, ±2%" }
+          ]
+        }
+      ],
+      "useCases": ["Irrigation planning", "Greenhouse monitoring", "Crop research"],
+      "pricingPlanIds": ["starter", "pro", "enterprise"],
+      "downloads": [],
+      "status": "beta",
+      "tags": ["agriculture", "sensor", "lora"],
+      "featured": true,
+      "published": true,
+      "order": 2
+    },
+    {
+      "slug": "dash-stack",
+      "name": "Dash Stack",
+      "category": "software",
+      "tagline": "Custom dashboards without the setup headache.",
+      "summary": "A white-label dashboard starter for IoT and business metrics.",
+      "description": [
+        "Dash Stack gives teams a head start on internal dashboards. Connect your API, pick visualisations, and deploy.",
+        "Built with Next.js, Tailwind CSS, and Recharts. It includes auth, dark mode, role-based access, and exportable reports."
+      ],
+      "image": { "src": "/images/products/dash-stack.webp", "alt": "Dash Stack dashboard preview" },
+      "gallery": [],
+      "features": [
+        { "icon": "layout-dashboard", "title": "Ready-made widgets", "description": "Charts, tables, maps, and KPI cards." },
+        { "icon": "plug", "title": "API first", "description": "Connect REST, MQTT, or WebSocket data sources." },
+        { "icon": "moon", "title": "Dark mode", "description": "Polished light and dark themes included." }
+      ],
+      "specs": [
+        {
+          "group": "Tech stack",
+          "items": [
+            { "label": "Frontend", "value": "Next.js + TypeScript" },
+            { "label": "Styling", "value": "Tailwind CSS" },
+            { "label": "Charts", "value": "Recharts" }
+          ]
+        }
+      ],
+      "useCases": ["IoT dashboards", "Operations centres", "SaaS admin panels"],
+      "pricingPlanIds": ["pro", "enterprise"],
+      "downloads": [
+        { "label": "Live demo", "href": "https://demo.inizh.tech" }
+      ],
+      "status": "available",
+      "tags": ["dashboard", "saas", "starter"],
+      "featured": false,
+      "published": true,
+      "order": 3
+    },
+    {
+      "slug": "connect-bridge",
+      "name": "Connect Bridge",
+      "category": "software",
+      "tagline": "Glue for legacy systems.",
+      "summary": "A lightweight integration service that connects older equipment to modern APIs.",
+      "description": [
+        "Connect Bridge reads serial, Modbus, or OPC-UA data from legacy machines and exposes clean REST or MQTT interfaces.",
+        "It is deployed as a Docker container at the edge and includes a rules engine for alerts and data transformation."
+      ],
+      "image": { "src": "/images/products/connect-bridge.webp", "alt": "Connect Bridge integration service diagram" },
+      "gallery": [],
+      "features": [
+        { "icon": "link", "title": "Protocol translation", "description": "Modbus, OPC-UA, serial to HTTP/MQTT." },
+        { "icon": "container", "title": "Edge deployable", "description": "Runs in Docker on ARM and x86." },
+        { "icon": "bell", "title": "Rule engine", "description": "Trigger alerts and actions on incoming data." }
+      ],
+      "specs": [
+        {
+          "group": "Protocols",
+          "items": [
+            { "label": "Input", "value": "Modbus RTU/TCP, OPC-UA, Serial" },
+            { "label": "Output", "value": "REST, MQTT, WebSocket" }
+          ]
+        }
+      ],
+      "useCases": ["Factory digitisation", "Building automation", "Legacy modernisation"],
+      "pricingPlanIds": ["enterprise"],
+      "downloads": [],
+      "status": "coming-soon",
+      "tags": ["integration", "modbus", "edge"],
+      "featured": false,
+      "published": true,
+      "order": 4
+    }
+  ]
+}

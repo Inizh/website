@@ -1,0 +1,123 @@
+{
+  "seo": {
+    "title": "About",
+    "description": "Meet Inizh: an Indian studio building IoT systems, custom software, and original games."
+  },
+  "intro": {
+    "headline": "We are Inizh",
+    "body": [
+      "Inizh is a small product studio based in Coimbatore, India. We started by making games, fell in love with embedded systems and software along the way, and now build connected products end to end.",
+      "Our work spans IoT hardware, cloud dashboards, custom software, and original indie games. We keep teams small, communicate clearly, and ship often."
+    ]
+  },
+  "mission": {
+    "title": "Mission",
+    "body": "Build reliable, human-centered technology that solves real problems — and occasionally makes people smile."
+  },
+  "vision": {
+    "title": "Vision",
+    "body": "A world where Indian studios are known for both world-class engineering and unforgettable interactive experiences."
+  },
+  "values": [
+    {
+      "icon": "wrench",
+      "title": "Craft",
+      "description": "We sweat the details so every device, app, and game feels intentional."
+    },
+    {
+      "icon": "users",
+      "title": "Collaboration",
+      "description": "We work closely with customers and players, not around them."
+    },
+    {
+      "icon": "lightbulb",
+      "title": "Curiosity",
+      "description": "We try bold ideas, share what we learn, and iterate in public."
+    },
+    {
+      "icon": "globe",
+      "title": "Local roots, global reach",
+      "description": "Built in India, shipped everywhere."
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2023",
+      "title": "Studio founded",
+      "description": "Inizh started as an indie game studio with a focus on playable experiments."
+    },
+    {
+      "year": "2024",
+      "title": "First prototypes",
+      "description": "Space Shooter and Yoi-Yurei prototypes went into active development."
+    },
+    {
+      "year": "2025",
+      "title": "IoT + software expansion",
+      "description": "We began shipping connected-device pilots and custom software for small businesses."
+    },
+    {
+      "year": "2026",
+      "title": "New website, same mission",
+      "description": "A unified home for our IoT, software, and game work."
+    }
+  ],
+  "team": [
+    {
+      "name": "JC Kawin",
+      "role": "Game Designer",
+      "bio": "Designs systems and stories that keep players coming back.",
+      "photo": "https://github.com/JCKawin.png?size=400",
+      "links": [
+        { "platform": "github", "url": "https://github.com/JCKawin" }
+      ]
+    },
+    {
+      "name": "Jai Suriyaa",
+      "role": "2D Artist",
+      "bio": "Brings characters and worlds to life with bold art.",
+      "photo": "https://github.com/jaisuriyaa2007.png?size=400",
+      "links": [
+        { "platform": "github", "url": "https://github.com/jaisuriyaa2007" }
+      ]
+    },
+    {
+      "name": "Joseph Daniel",
+      "role": "Musician",
+      "bio": "Composes soundtracks and audio that shape the mood of every scene.",
+      "photo": "https://github.com/JD-2572007.png?size=400",
+      "links": [
+        { "platform": "github", "url": "https://github.com/JD-2572007" }
+      ]
+    },
+    {
+      "name": "Aadi Vibhuti",
+      "role": "Game Developer",
+      "bio": "Builds gameplay systems and tooling for our indie titles.",
+      "photo": "https://github.com/Aadi-Vibhuti.png?size=400",
+      "links": [
+        { "platform": "github", "url": "https://github.com/Aadi-Vibhuti" }
+      ]
+    },
+    {
+      "name": "Gunit Kumar",
+      "role": "Game Programmer",
+      "bio": "Turns design ideas into solid, performant code across platforms.",
+      "photo": "https://github.com/Fexaop.png?size=400",
+      "links": [
+        { "platform": "github", "url": "https://github.com/Fexaop" }
+      ]
+    }
+  ],
+  "stats": [
+    { "value": "5", "label": "Team members" },
+    { "value": "4", "label": "Games in development" },
+    { "value": "10+", "label": "IoT prototypes" },
+    { "value": "2", "label": "Years building" }
+  ],
+  "cta": {
+    "headline": "Want to work with us?",
+    "description": "We are always open to interesting product ideas, collaborations, and internships.",
+    "cta": { "label": "Contact Inizh", "href": "/contact" }
+  }
+}

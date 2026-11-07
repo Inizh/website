@@ -1,0 +1,35 @@
+{
+  "name": "Inizh",
+  "tagline": "Connected devices. Smart software. Playable experiences.",
+  "description": "Inizh designs IoT systems, custom software, and original games from India.",
+  "url": "https://www.inizh.tech",
+  "logo": {
+    "light": "/images/brand/logo-light.svg",
+    "dark": "/images/brand/logo-dark.svg",
+    "alt": "Inizh logo"
+  },
+  "ogImage": "/images/brand/og-default.png",
+  "contactEmail": "hello@inizh.tech",
+  "supportEmail": "support@inizh.tech",
+  "phone": "+91 00000 00000",
+  "address": {
+    "line1": "",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "postalCode": ""
+  },
+  "social": [
+    { "platform": "github", "url": "https://github.com/inizh" },
+    { "platform": "linkedin", "url": "https://linkedin.com/company/inizh" },
+    { "platform": "youtube", "url": "https://youtube.com/@inizh" },
+    { "platform": "x", "url": "https://x.com/inizh" }
+  ],
+  "footer": {
+    "copyright": "© {year} Inizh. All rights reserved.",
+    "legalLinks": [
+      { "label": "Privacy Policy", "href": "/privacy" },
+      { "label": "Terms of Service", "href": "/terms" }
+    ]
+  }
+}

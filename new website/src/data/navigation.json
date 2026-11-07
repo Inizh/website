@@ -1,0 +1,35 @@
+{
+  "header": [
+    { "label": "Products", "href": "/products" },
+    { "label": "Games", "href": "/games" },
+    { "label": "Pricing", "href": "/pricing" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "About", "href": "/about" },
+    { "label": "Support", "href": "/support" }
+  ],
+  "headerCta": { "label": "Contact Us", "href": "/contact" },
+  "footerColumns": [
+    {
+      "title": "Company",
+      "links": [
+        { "label": "About", "href": "/about" },
+        { "label": "Blog", "href": "/blog" },
+        { "label": "Contact", "href": "/contact" }
+      ]
+    },
+    {
+      "title": "Offerings",
+      "links": [
+        { "label": "Products", "href": "/products" },
+        { "label": "Games", "href": "/games" },
+        { "label": "Pricing", "href": "/pricing" }
+      ]
+    },
+    {
+      "title": "Help",
+      "links": [
+        { "label": "Support", "href": "/support" }
+      ]
+    }
+  ]
+}

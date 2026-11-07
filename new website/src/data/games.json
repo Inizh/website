@@ -1,0 +1,227 @@
+{
+  "seo": {
+    "title": "Games",
+    "description": "Play and wishlist indie games from Inizh, including Ride Along, Yoi-Yurei, and Space Shooter."
+  },
+  "genres": [
+    { "id": "shooter", "label": "Shooter" },
+    { "id": "driving", "label": "Driving" },
+    { "id": "metroidvania", "label": "Metroidvania" },
+    { "id": "casual", "label": "Casual" },
+    { "id": "2d", "label": "2D" },
+    { "id": "3d", "label": "3D" }
+  ],
+  "platforms": [
+    { "id": "pc", "label": "PC", "icon": "monitor" },
+    { "id": "android", "label": "Android", "icon": "smartphone" }
+  ],
+  "items": [
+    {
+      "slug": "ride-along",
+      "title": "Ride Along",
+      "tagline": "Buckle up, hit the road, and enjoy the ride.",
+      "summary": "A relaxing car driving game built for cruising through serene landscapes at your own pace.",
+      "description": [
+        "Escape into open highways, scenic coastal roads, and tranquil countryside routes. Ride Along lets you leave the pressure of competitive racing behind and focus purely on smooth physics, soothing soundtracks, and peaceful exploration.",
+        "Built for players who want a late-night drive without leaving the house."
+      ],
+      "genres": ["driving", "3d", "casual"],
+      "platforms": ["pc"],
+      "status": "in-development",
+      "releaseDate": "2027-12-31",
+      "cover": { "src": "/images/games/ride-along-cover.webp", "alt": "Ride Along cover art showing a car on a coastal highway at sunset" },
+      "banner": { "src": "/images/games/ride-along-banner.webp", "alt": "Ride Along wide banner" },
+      "screenshots": [],
+      "features": [
+        "Dynamic day/night cycle and realistic weather conditions",
+        "Radio stations featuring ambient, lofi, and synthwave tracks",
+        "Free-roam mode with customisable vehicles"
+      ],
+      "engine": "Unity",
+      "storeLinks": [
+        { "platform": "steam", "label": "Wishlist on Steam", "href": "#" }
+      ],
+      "systemRequirements": {
+        "minimum": {
+          "OS": "Windows 10 64-bit",
+          "Processor": "Intel Core i3-6100 / AMD FX-6300",
+          "Memory": "8 GB",
+          "Graphics": "NVIDIA GeForce GTX 750 Ti / AMD Radeon R7 360",
+          "Storage": "10 GB"
+        },
+        "recommended": {
+          "OS": "Windows 11 64-bit / Linux 6.12",
+          "Processor": "Intel Core i5-10400F / AMD Ryzen 5 3600",
+          "Memory": "16 GB",
+          "Graphics": "NVIDIA GeForce GTX 1660 Super / AMD Radeon RX 5600 XT",
+          "Storage": "10 GB SSD"
+        }
+      },
+      "pressQuotes": [],
+      "featured": true,
+      "published": true,
+      "order": 1
+    },
+    {
+      "slug": "yoi-yurei",
+      "title": "Yoi-Yurei",
+      "tagline": "Until I Die.",
+      "summary": "A 2D Metroidvania with Indian folklore influences and multiplayer elements.",
+      "description": [
+        "What if Indians made a Metroidvania? Yoi-Yurei explores mythic landscapes, tight combat, and interwoven co-op paths.",
+        "Details are still under wraps, but the prototype already captures the tone we want: mysterious, fast, and visually striking."
+      ],
+      "genres": ["metroidvania", "2d"],
+      "platforms": ["pc"],
+      "status": "concept",
+      "releaseDate": "2028-12-31",
+      "cover": { "src": "/images/games/yoi-yurei-cover.webp", "alt": "Yoi-Yurei cover art" },
+      "banner": { "src": "/images/games/yoi-yurei-banner.webp", "alt": "Yoi-Yurei wide banner" },
+      "screenshots": [],
+      "features": [
+        "Tight 2D combat",
+        "Interconnected world",
+        "Co-operative multiplayer"
+      ],
+      "engine": "Unity",
+      "storeLinks": [
+        { "platform": "steam", "label": "Wishlist on Steam", "href": "#" }
+      ],
+      "systemRequirements": {
+        "minimum": {
+          "OS": "Any",
+          "Processor": "Any x86-64 or Arm 1GHz",
+          "Memory": "2 GB",
+          "Graphics": "None",
+          "Storage": "3 GB"
+        },
+        "recommended": {
+          "OS": "Linux 6.12+",
+          "Processor": "AMD Ryzen 3 1200 or equivalent",
+          "Memory": "4 GB",
+          "Graphics": "AMD Vega 3 or equivalent",
+          "Storage": "3 GB"
+        }
+      },
+      "pressQuotes": [],
+      "featured": true,
+      "published": true,
+      "order": 2
+    },
+    {
+      "slug": "space-shooter",
+      "title": "Space Shooter",
+      "tagline": "Just for a start.",
+      "summary": "A simple space shooter that lets you play with friends.",
+      "description": [
+        "Our first playable experiment: a no-frills space shooter with easy and hard modes, plus a local multiplayer option.",
+        "It exists to prove we can ship something fun and learn fast."
+      ],
+      "genres": ["shooter", "2d", "casual"],
+      "platforms": ["pc"],
+      "status": "in-development",
+      "releaseDate": "2027-06-30",
+      "cover": { "src": "/images/games/space-shooter-cover.webp", "alt": "Space Shooter cover art" },
+      "banner": { "src": "/images/games/space-shooter-banner.webp", "alt": "Space Shooter wide banner" },
+      "screenshots": [],
+      "features": [
+        "Easy Mode if you are new",
+        "Hard Mode if you are a gamer",
+        "Multiplayer if you are committed"
+      ],
+      "engine": "Unity",
+      "storeLinks": [
+        { "platform": "itch", "label": "Play on itch.io", "href": "#" }
+      ],
+      "systemRequirements": {
+        "minimum": {
+          "OS": "Any",
+          "Processor": "Any x86-64 or Arm 800MHz",
+          "Memory": "256 MB",
+          "Graphics": "None",
+          "Storage": "80 MB"
+        },
+        "recommended": {
+          "OS": "Linux 6.12",
+          "Processor": "AMD Athlon 3000G or equivalent",
+          "Memory": "4 GB",
+          "Graphics": "Intel UHD 600 or equivalent",
+          "Storage": "80 MB"
+        }
+      },
+      "pressQuotes": [
+        { "quote": "Waste of time.", "source": "Parents" }
+      ],
+      "featured": false,
+      "published": true,
+      "order": 3
+    },
+    {
+      "slug": "love-games",
+      "title": "Love Games",
+      "tagline": "Only for committed people.",
+      "summary": "Super-fast love games optimised to play with your life partner.",
+      "description": [
+        "A lighthearted multiplayer experiment with a private chatbot twist. Play mini-games and see how well you know each other.",
+        "Made as a fun side project by a team that does not take itself too seriously."
+      ],
+      "genres": ["casual", "2d"],
+      "platforms": ["pc", "android"],
+      "status": "concept",
+      "releaseDate": "2026-12-31",
+      "cover": { "src": "/images/games/love-games-cover.webp", "alt": "Love Games cover art" },
+      "banner": { "src": "/images/games/love-games-banner.webp", "alt": "Love Games wide banner" },
+      "screenshots": [],
+      "features": [
+        "FLAMES for verification",
+        "Private chatbot but you can talk to only one person forever"
+      ],
+      "engine": "Unity",
+      "storeLinks": [
+        { "platform": "itch", "label": "Play on itch.io", "href": "#" }
+      ],
+      "systemRequirements": {
+        "minimum": {
+          "OS": "Any",
+          "Processor": "Any x86-64 or Arm 800MHz",
+          "Memory": "1 GB",
+          "Graphics": "None",
+          "Storage": "2 GB"
+        },
+        "recommended": {
+          "OS": "Linux 6.12",
+          "Processor": "AMD Athlon 3000G or equivalent",
+          "Memory": "4 GB",
+          "Graphics": "Intel UHD 600 or equivalent",
+          "Storage": "2 GB"
+        }
+      },
+      "pressQuotes": [],
+      "featured": false,
+      "published": true,
+      "order": 4
+    }
+  ],
+  "services": {
+    "title": "Game development services",
+    "description": "We also build games and prototypes for partners who need playful experiences, serious games, or branded titles.",
+    "offerings": [
+      {
+        "icon": "pencil",
+        "title": "Prototyping",
+        "description": "Rapid gameplay prototypes to test ideas before full production."
+      },
+      {
+        "icon": "smartphone",
+        "title": "PC & mobile",
+        "description": "2D and 3D games for PC and Android using Unity or custom engines."
+      },
+      {
+        "icon": "users",
+        "title": "Co-dev support",
+        "description": "Engineering support for teams that need extra hands on gameplay systems."
+      }
+    ],
+    "cta": { "label": "Talk to us about your game", "href": "/contact?subject=game-dev" }
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "seo": {
+    "title": "Support",
+    "description": "Find help, documentation, and contact options for Inizh products and services."
+  },
+  "intro": {
+    "headline": "Support hub",
+    "subheadline": "Find answers, browse docs, or open a support request."
+  },
+  "channels": [
+    {
+      "id": "email",
+      "icon": "mail",
+      "title": "Email support",
+      "value": "support@inizh.tech",
+      "href": "mailto:support@inizh.tech",
+      "hours": "Monday – Friday",
+      "responseTime": "Within 24 hours"
+    },
+    {
+      "id": "chat",
+      "icon": "message-circle",
+      "title": "Live chat",
+      "value": "Available on Pro and Enterprise",
+      "href": "#",
+      "hours": "Business hours IST",
+      "responseTime": "Within a few minutes"
+    },
+    {
+      "id": "docs",
+      "icon": "book-open",
+      "title": "Documentation",
+      "value": "docs.inizh.tech",
+      "href": "https://docs.inizh.tech",
+      "hours": "24/7",
+      "responseTime": "Self-serve"
+    }
+  ],
+  "categories": [
+    {
+      "id": "getting-started",
+      "icon": "rocket",
+      "title": "Getting started",
+      "description": "Set up your first device or dashboard.",
+      "href": "https://docs.inizh.tech/getting-started"
+    },
+    {
+      "id": "hardware",
+      "icon": "cpu",
+      "title": "Hardware",
+      "description": "Wiring, power, and sensor help.",
+      "href": "https://docs.inizh.tech/hardware"
+    },
+    {
+      "id": "software",
+      "icon": "code-2",
+      "title": "Software & integrations",
+      "description": "APIs, SDKs, and dashboards.",
+      "href": "https://docs.inizh.tech/software"
+    },
+    {
+      "id": "billing",
+      "icon": "credit-card",
+      "title": "Billing",
+      "description": "Plans, invoices, and cancellations.",
+      "href": "https://docs.inizh.tech/billing"
+    }
+  ],
+  "faq": [
+    {
+      "category": "getting-started",
+      "question": "How do I register a Smart Hub?",
+      "answer": "Power on the hub, connect it to your network, and follow the onboarding flow in the dashboard."
+    },
+    {
+      "category": "hardware",
+      "question": "Which sensors work with Field Monitor?",
+      "answer": "Field Monitor supports capacitive soil moisture, temperature, humidity, and light sensors out of the box."
+    },
+    {
+      "category": "software",
+      "question": "Can I push data to my own backend?",
+      "answer": "Yes. Use the MQTT or HTTP webhooks documented in the API reference."
+    },
+    {
+      "category": "billing",
+      "question": "How do I cancel my subscription?",
+      "answer": "You can cancel from the billing page in your account settings."
+    },
+    {
+      "category": "hardware",
+      "question": "What power supply does Smart Hub need?",
+      "answer": "Smart Hub runs on 5 V / 2 A via USB-C."
+    },
+    {
+      "category": "software",
+      "question": "Is there a public API?",
+      "answer": "Yes. API documentation is available at docs.inizh.tech/api."
+    }
+  ],
+  "resources": [
+    {
+      "icon": "book-open",
+      "title": "Documentation",
+      "description": "Guides and API references.",
+      "href": "https://docs.inizh.tech"
+    },
+    {
+      "icon": "file-text",
+      "title": "Quick start guides",
+      "description": "Step-by-step setup for each product.",
+      "href": "https://docs.inizh.tech/guides"
+    },
+    {
+      "icon": "download",
+      "title": "Downloads",
+      "description": "Firmware, datasheets, and SDKs.",
+      "href": "https://docs.inizh.tech/downloads"
+    },
+    {
+      "icon": "video",
+      "title": "Video tutorials",
+      "description": "Short walkthroughs for common tasks.",
+      "href": "https://youtube.com/@inizh"
+    }
+  ],
+  "statusPage": {
+    "label": "Service status",
+    "href": "https://status.inizh.tech"
+  },
+  "form": {
+    "categories": [
+      { "label": "Hardware issue", "href": "hardware" },
+      { "label": "Software / dashboard", "href": "software" },
+      { "label": "Billing", "href": "billing" },
+      { "label": "Account access", "href": "account" },
+      { "label": "Game bug report", "href": "game-bug" },
+      { "label": "Other", "href": "other" }
+    ],
+    "priorities": [
+      { "label": "Low", "href": "low" },
+      { "label": "Medium", "href": "medium" },
+      { "label": "High", "href": "high" }
+    ],
+    "productOptions": [
+      { "label": "Smart Hub", "href": "smart-hub" },
+      { "label": "Field Monitor", "href": "field-monitor" },
+      { "label": "Dash Stack", "href": "dash-stack" },
+      { "label": "Connect Bridge", "href": "connect-bridge" }
+    ],
+    "gameOptions": [
+      { "label": "Ride Along", "href": "ride-along" },
+      { "label": "Yoi-Yurei", "href": "yoi-yurei" },
+      { "label": "Space Shooter", "href": "space-shooter" },
+      { "label": "Love Games", "href": "love-games" }
+    ],
+    "successMessage": "Your support request has been received. We will follow up as soon as possible."
+  },
+  "slaNotes": [
+    "Starter plans receive email support during business hours.",
+    "Pro plans include priority chat with a 24-hour response target.",
+    "Enterprise plans include a dedicated support channel and SLA."
+  ]
+}
